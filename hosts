@@ -9,18 +9,18 @@
 #   - A hostname/ip can be a member of multiple groups
 
 # Ex 1: Ungrouped hosts, specify before any group headers
-172.31.28.29
+172.31.28.19
 172.31.25.102
 
 [jenkins]
 172.31.28.19
 
-[application-server]
-172.31.25.102
+[applicationserver]
+172.31.25.102 
 
 [master:children]
 jenkins
-aplication-server
+applicationserver
 
 ## green.example.com
 ## blue.example.com
